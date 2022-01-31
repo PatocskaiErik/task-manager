@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Licorice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Licorice&family=Noto+Serif&display=swap");
+
+.App,
+.Home,
+.body,
+.html {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: black;
+  padding: 0;
+}
+
+.btn:hover {
+  background-color: rgb(146, 146, 146);
+}
+
+.Uncompleted {
+  width: 100%;
+}
+
+.Completed {
+  width: 100%;
+}
+
+.All {
+  width: 100%;
+}
+
+.Add {
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.about {
+  margin-top: 20px;
+  margin-left: 30px;
+  justify-content: space-around;
+}
+
+.edit {
+  margin-top: 10px;
+  margin-left: 75px;
+}
+
+.editButton {
+  margin-top: 10px;
+  margin-left: 87px;
+}
+
+.note {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.new {
+  width: 100%;
+  background-color: rgb(235, 235, 235);
+}
+
+.input {
+  height: 32px;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  border-top-style: none;
+  border-left-style: none;
+  border-right-style: none;
+  border-bottom-style: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.deleteButton {
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-left: 100px;
+}
