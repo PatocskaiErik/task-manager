@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.util.Set;
 
 @Entity
@@ -25,6 +26,7 @@ public class Employee {
     @Column(name="post")
     private String post;
 
+    @Email
     @Column(name="email")
     private String email;
 

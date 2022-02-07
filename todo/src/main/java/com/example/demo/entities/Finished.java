@@ -9,22 +9,12 @@ import javax.persistence.*;
 @Entity
 @Getter
 @Setter
-@Table(name="finished")
+@Table(name="finisheds")
 public class Finished {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
-
-    private String name;
-
-    private String emp;
-
-    private String project;
-
-    private String partner;
-
-    private Integer time;
 
     @ManyToOne
     @JoinColumn
@@ -34,13 +24,20 @@ public class Finished {
     @JoinColumn
     private Task task;
 
+    @Column(name="time")
+    private Integer time;
+
     @JsonBackReference
     public Task getTask() {
         return task;
     }
 
+    @JsonBackReference
+    private Employee getEmployee() {
+        return employee;
+    }
+
     public Finished() {
-        this.name = name;
         this.time = time;
         this.employee = employee;
         this.task = task;

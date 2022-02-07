@@ -4,26 +4,27 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import java.util.Set;
 
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
-@Table(name="partner")
+@Table(name="partners")
 public class Partner {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="id")
     private Long id;
 
-    @Column(name = "name")
+    @Column(name="name")
     private String name;
 
     @Column(name="address")
     private String address;
 
+    @Email
     @Column(name="email")
     private String email;
 

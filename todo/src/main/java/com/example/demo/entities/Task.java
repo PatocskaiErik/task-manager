@@ -17,13 +17,11 @@ public class Task {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 
+	@Column(name="name")
 	private String name;
 
+	@Column(name="description")
 	private String description;
-
-	private String part;
-
-	private boolean isCompleted;
 
 	@ManyToOne
 	@JoinColumn
@@ -40,8 +38,6 @@ public class Task {
 	public Task() {
 		this.name = name;
 		this.description = description;
-		this.part = part;
-		this.isCompleted = isCompleted;
 		this.partner = partner;
 		this.finished = finished;
 	}
